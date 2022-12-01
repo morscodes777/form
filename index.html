@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>ADVENTURE</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a href="#">Contact</a></li>
+        </ul>
+        <img src="../dist/images//main-menu.png" alt="" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <div href="#" class="ctn">Learn More</div>
+        </div>
+    </header>
+
+    <!-- Events -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="../dist/images/img2.jpg" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>Fly across the mountains while taking in the breathtaking Himalayan vistas.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="../dist/images/img1.jpg" alt="">
+                <h4>Walking Holidays</h4>
+                <p>We aim to give you as wide a choice of walking holiday as possible.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+      <div class="explore-content">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <p>Our walking holidays span the globe, from the Americas and Europe, to Africa and the Far East – pick your next hike or trekking holiday from a choice of over 30 countries worldwide.</p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS & DESTINATION</h1>
+                <div class="line"></div>
+                <p1>Exceptional memories and experiences lie at the heart of everything we do. Here are just a few of the thousands of experiences customers have enjoyed on our holidays.</p1>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="../dist/images/1stpic.jpg" alt="">
+                    <img src="../dist/images/2ndpic.jpg" alt="">
+                    <img src="../dist/images/3rdpic.jpg" alt="">
+                    <img src="../dist/images/4thpic.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sample Form-->
+    <div class="left">
+        <div class="container1">
+            <h1>Application Form</h1><br>
+        
+            <form class="form" id="form" name="form" action="#" onsubmit="formSubmit()">
+                <div class="form1">
+                    <div class="form-content">
+                        <div class="personal-details">Personal Details:</div><br>
+                        
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="fname">Full Name:</label><br>
+                                    <input type="text" placeholder="Enter your full name" id="fname" name="fname">
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="email">Email:</label><br>
+                                    <input type="text" placeholder="Enter your email" id="email" name="email">
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="number">Phone Number:</label><br>
+                                    <input type="text" placeholder="Enter your number" id="number" name="number">
+                                    <small>Format: 09123456789</small>
+                                </div>
+                        
+                                <div class="input-field">
+                                    <label for="bday">Birthday:</label><br>
+                                    <input type="date" id="bday" name="bday">
+                                </div>
+                                
+                                <div class="input-field">
+                                    <label for="nationality">Nationality:</label><br>
+                                    <select id="nationality" name="nationality">
+                                        <option value="">Choose</option>
+                                        <option value="American">American</option>
+                                        <option value="Chinese">Chinese</option>
+                                        <option value="Filipino">Filipino</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Gender:</label><br>
+                                    <input type="radio" id="male" name="gender" value="Male">
+                                    <label for="male">Male</label><br>
+                                    <input type="radio" id="female" name="gender" value="Female">
+                                    <label for="female">Female</label>
+                                </div>
+                        
+                                <div class="input-field">
+                                    <label>I can be a:</label><br>
+                                    <input type="checkbox" id="position1" name="position" value="Web-Designer">
+                                    <label for="position1">Web Designer</label><br>
+                                    <input type="checkbox" id="position2" name="position" value="Web-Developer">
+                                    <label for="position2">Web Developer</label><br>
+                                    <input type="checkbox" id="position3" name="position" value="Product-Manager">
+                                    <label for="position3">Product Manager</label>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="salary">Expected Salary:</label><br>
+                                    <input type="number" placeholder="Enter expected salary" id="salary" name="salary"><br><br>
+                                </div>
+                            </div>
+
+                                <div>
+                                    <input type="submit" value="Submit" onclick="submitOk()">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="right">
+        <div class="container2">
+            <h2>Form Results</h2>
+                    
+            <table class="result" id="myResult">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Birthday</th>
+                        <th>Nationality</th>
+                        <th>Gender</th>
+                        <th>Work Position</th>
+                        <th>Expected Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+        
+    <section class="footer">
+        <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>Copyright © 2020 The Natural Travel Collection Ltd & BomSymbols</p>
+    </section>
+
+    <script src="../function.js"></script>
+</body>
+</html>
